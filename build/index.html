@@ -69,18 +69,19 @@
 	</div>
 </header>
 
-<section class="main">
+<section class="section main">
+	<div class="container">
 	<ul class="navigation" id="filters">
 		<li><a href="#" data-filter="*">Все записи</a></li>
-		<li><a href="#" data-filter=".main">Главные новости</a></li>
+		<li><a href="#" data-filter=".mainnews">Главные новости</a></li>
 		<li><a href="#" data-filter=".all-news">Все новости</a></li>
 		<li><a href="#" data-filter=".relises">Анонсы событий</a></li>
 		<li><a href="#" data-filter=".articles">Статьи</a></li>
 		<li><a href="#" data-filter=".themes">Тематика университета</a></li>
 	</ul>
-	<div class="news-list" id="container">
-		<div class="grid-sizer"></div>
-		<div class="news news__wide news__tall main all">
+	<div class="newslist" id="container">
+		<div class="news-size"></div>
+		<div class="news news__wide news__tall mainnews all">
 				<img src="img/news-image-big.jpg" alt="" class="news-image">
 				<div class="news-content">
 					<h2 class="news-title">5 причин для изучения промышленной инженерии</h2>
@@ -105,7 +106,7 @@
 					</a>
 				</div>
 		</div>
-		<div class="news news__tall articles main">
+		<div class="news news__tall articles mainnews">
 				<img src="img/news-image-2.jpg" alt="" class="news-image">
 				<div class="news-content">
 					<h2 class="news-title">5 причин для изучения промышленной инженерии</h2>
@@ -141,7 +142,7 @@
 					</a>
 				</div>
 		</div>
-		<div class="news news__tall main articles all-news">
+		<div class="news news__tall mainnews articles all-news">
 				<img src="img/news-image-5.jpg" alt="" class="news-image">
 				<div class="news-content">
 					<h2 class="news-title">5 причин для изучения промышленной инженерии</h2>
@@ -153,7 +154,7 @@
 					</a>
 				</div>
 		</div>
-		<div class="news news__tall main themes all-news">
+		<div class="news news__tall mainnews themes all-news">
 				<img src="img/news-image-6.jpg" alt="" class="news-image">
 				<div class="news-content">
 					<h2 class="news-title">5 причин для изучения промышленной инженерии</h2>
@@ -177,7 +178,7 @@
 					</a>
 				</div>
 		</div>
-		<div class="news main all-news">
+		<div class="news mainnews all-news">
 				<img src="img/news-image-8.jpg" alt="" class="news-image">
 				<div class="news-content">
 					<h2 class="news-title">5 причин для изучения промышленной инженерии</h2>
@@ -201,7 +202,7 @@
 					</a>
 				</div>
 		</div>
-		<div class="news all-news main articles">
+		<div class="news all-news mainnews articles">
 				<img src="img/news-image-10.jpg" alt="" class="news-image">
 				<div class="news-content">
 					<h2 class="news-title">5 причин для изучения промышленной инженерии</h2>
@@ -228,8 +229,11 @@
 	<a href="#">&#62;</a>
 </div>
 
+</div>
+
 </section>
 <section class="closest-events">
+	<div class="container">
 	<h1 class="section-title">Ближайшие события</h1>
 	<div class="gradient"></div>
 	<div class="events">
@@ -324,6 +328,7 @@
 	
 </div>
 	</div>
+	</div>
 </section>
 
 <footer class="footer">
@@ -367,7 +372,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="js/scripts.min.js"></script> <!--общий минимизированный файл скрипта-->
 </body>
 </html>

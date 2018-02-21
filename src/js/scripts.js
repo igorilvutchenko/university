@@ -21,13 +21,14 @@ $(document).ready(function() {
 
 /*Izotope sorting*/
 
-$('.news-list').isotope({
+$('.newslist').isotope({
   // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.news',
-  percentPosition: true,
+  // percentPosition: true,
   masonry: {
     // use element for option
-    columnWidth: '.grid-sizer'
+    columnWidth: '.news-size',
+    gutter: 25
   }
 })
 
@@ -77,31 +78,6 @@ $(document).ready(function() {
       $('#enrollform').addClass('hide');
       $('#enrollbutton').removeClass('hide');
       event.stopPropagation();
-  })
-});
-
-
-$(document).ready(function() {
- 
- 
-   $(".arrow-up").click(function(e) {
-    e.preventDefault();
-      $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top + "px"
-      }, 700, "swing");
-   });
- 
- 
-});
-
-$('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh')
-})
-
-
-$(document).ready(function() {
-  $('.event-date').on('click', function(event){
-      $(this).pickmeup('.date').show();
   })
 });
 
