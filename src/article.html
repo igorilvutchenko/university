@@ -10,6 +10,7 @@
 	//= html/header.html
 
 	<section class="article">
+        <div class="container">
 		<h1 class="article-title">Внедрение бизнес-обученя в современное молодежное образование</h1>
         <div class="article-container">
             <div class="gradient gradient__left"></div>
@@ -30,10 +31,18 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia praesentium ea perferendis fuga odit ipsum voluptate deserunt ipsam quo laudantium provident, cum velit possimus vitae expedita rerum magnam eos illum dolorum ipsa obcaecati aut! Perferendis obcaecati, at et, illum quis, libero fuga quae provident ex ducimus, distinctio temporibus odio sed.
 
 		  <div class="article-gallery ba-grid">
-		  	<img src="img/article-gallery-1.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
-		  	<img src="img/article-gallery-2.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
-		  	<img src="img/article-gallery-3.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
-		  	<img src="img/article-gallery-4.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
+            <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+		  	<img src="img/article-gallery-1.jpg" alt="">
+          </div>
+          <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+		  	<img src="img/article-gallery-2.jpg" alt="">
+          </div>
+          <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+		  	<img src="img/article-gallery-3.jpg" alt="">
+          </div>
+          <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+		  	<img src="img/article-gallery-4.jpg" alt="">
+          </div>
 		  </div>
 		<h2 class="article-header">Общение между студентами</h2>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque beatae ab saepe explicabo eum ducimus, eaque et, quibusdam dolore illo.
@@ -100,15 +109,20 @@
             </table>
 
             <div class="videos ba-grid">
-                <iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="video ba-width-1-2">
+                <div class="video ba-width-1-2 ba-width-medium-1-1 ba-width-small-1-1">
+                <iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY">
 	           </iframe>
-	           <iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="video ba-width-1-2">
+                </div>
+                <div class="video ba-width-1-2 ba-width-medium-1-1 ba-width-small-1-1">
+	           <iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY">
 	           </iframe>
+           </div>
             </div>
-        </article>
+        </div>
     </section>
         
     <section class="form">
+        <div class="container">
         <form action="" class="form" id="subcribeform">
         <h2 class="form-title form-title__wide">Подишитесь на наш блог и всегда будьте в курсе всех самых сежих и интересных событий</h2>
             <label for="emailaddres" class="form-label">
@@ -116,11 +130,14 @@
             </label>
             <button class="form-button form-button__right">Подписаться</button>
         <div class="gradient gradient__left"></div>
-        </form>     
+        </form>    
+        </div> 
 </section>
 
 	
 	//= html/footer.html
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 

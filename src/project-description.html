@@ -10,10 +10,15 @@
 	//= html/header.html
 
 	<section class="article">
+        <div class="container">
 		<h1 class="article-title">Внедрение бизнес-обученя в современное молодежное образование</h1>
 		<div class="gradient gradient__left"></div>
-		<img src="img/article-main-image.jpg" alt="" class="article-image">
-		<a href="http://project.com.ua" class="article-link">http://project.com.ua</a>
+        <div class="article-image">
+		  <img src="img/article-main-image.jpg" alt="">
+        </div>
+        <div class="article-link">
+		  <a href="http://project.com.ua">http://project.com.ua</a>
+        </div>
 		<div class="article-description"><span class="article-description__bold">Спонсоры:</span>Кампус, Колумбийский университет, Голд медиа, Молодежная организация, Стенфорд</div>
 		<div class="article-intro">Вербальное общение включает звуки, слова, язык и речь. Разговор - это эффективный способ общения, и помощи в выражении наши эмоций словами. Эта форма бщения черезвычайно частная и ограниченная для нас</div>
 		<h2 class="article-header">Студенческая деятельность</h2>
@@ -28,10 +33,18 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia praesentium ea perferendis fuga odit ipsum voluptate deserunt ipsam quo laudantium provident, cum velit possimus vitae expedita rerum magnam eos illum dolorum ipsa obcaecati aut! Perferendis obcaecati, at et, illum quis, libero fuga quae provident ex ducimus, distinctio temporibus odio sed.
 
 		<div class="article-gallery ba-grid">
-			<img src="img/article-gallery-1.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
-			<img src="img/article-gallery-2.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
-			<img src="img/article-gallery-3.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
-			<img src="img/article-gallery-4.jpg" alt="" class="ba-width-1-4 ba-width-medium-1-2s">
+            <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+                <img src="img/article-gallery-1.jpg" alt="">
+            </div>
+            <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+                <img src="img/article-gallery-2.jpg" alt="">
+            </div>
+            <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+		  	   <img src="img/article-gallery-3.jpg" alt="">
+            </div>
+            <div class="article-gallery__img ba-width-1-4 ba-width-medium-1-2 ba-width-small-1-1">
+                <img src="img/article-gallery-4.jpg" alt="">
+            </div>
 		</div>
 		<h2 class="article-header">Общение между студентами</h2>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque beatae ab saepe explicabo eum ducimus, eaque et, quibusdam dolore illo.
@@ -96,19 +109,24 @@
     <td>15</td>
   </tr>
 		</table>
-		<div class="videos ba-grid">
-		<iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="video ba-width-1-2">
-		</iframe>
-			<iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="video ba-width-1-2">
-		</iframe>
+		<div class="ba-grid videos">
+            <div class="video ba-width-1-2 ba-width-medium-1-1 ba-width-small-1-1">
+		      <iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		      </iframe>
+            </div>
+            <div class="video ba-width-1-2 ba-width-medium-1-1 ba-width-small-1-1">
+		   	  <iframe width="555" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		      </iframe>
+             </div>
 		</div>
 		</article>
+        </div>
 	</section>
-	
-
 
 
 	//= html/footer.html
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>

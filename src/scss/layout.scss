@@ -139,6 +139,7 @@ img {
 }
 
 
+
 /* No Padding Grid */
 
 .ba-grid-nopad {
@@ -214,7 +215,7 @@ img {
 
 /* Phone landscape and bigger */
 
-@media (min-width: 480px) {
+@media (max-width: 767px) and (min-width: 320px) {
     .ba-float-left-small {
         float: left;
     }
@@ -262,7 +263,7 @@ img {
 
 /* Tablet and bigger */
 
-@media (min-width: 768px) {
+@media (max-width: 1140px) and (min-width: 768px) {
     .ba-float-left-medium {
         float: left;
     }

@@ -22,11 +22,8 @@ $(document).ready(function() {
 /*Izotope sorting*/
 
 $('.newslist').isotope({
-  // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.news',
-  // percentPosition: true,
   masonry: {
-    // use element for option
     columnWidth: '.news-size',
     gutter: 25
   }
@@ -54,11 +51,11 @@ $('#filters a').click(function(){
 /*Dropdown selector*/
 
 $(document).ready(function() {
-        $('#dd').on('click', function(event){
-            $('#dropdownmenu').toggleClass('hide');
-            event.stopPropagation();
-        })
-    });
+  $('#dd').on('click', function(event){
+      $('#dropdownmenu').toggleClass('hide');
+      event.stopPropagation();
+  })
+});
 
 
 
