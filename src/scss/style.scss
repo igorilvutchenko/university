@@ -516,17 +516,17 @@ a:hover{
 		// display: block;
 	// }	
 // }
-// .phone,
-// .mail,
-// .addr{
-	// display: block;
-	// margin-top:15px;
-	// text-decoration: none;
-	// color:$dark-gray;
-	// &:before{
-		// margin-right: 15px;		
-	// }
-// }
+.phone,
+.mail,
+.addr{
+	display: block;
+	margin-top:15px;
+	text-decoration: none;
+	color:$dark-gray;
+	&:before{
+		margin-right: 15px;		
+	}
+}
 
 @media (max-width: 1140px) and (min-width: 768px) {
 .address{
