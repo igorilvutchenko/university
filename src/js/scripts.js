@@ -8,6 +8,10 @@ $(document).ready(function() {
             $(this).addClass('oppenned');
             event.stopPropagation();
         })
+        // $(document).delegate('.sandvich', 'click', function(event){
+      // $(this).addClass('oppenned');
+      // event.stopPropagation();
+    // })
         $('body').on('click', function(event) {
             $('.sandvich').removeClass('oppenned');
         })
@@ -78,7 +82,20 @@ $(document).ready(function() {
   })
 });
 
+/*Call/hide form*/
+$(document).ready(function() {
+  $('#buttonteam').on('click', function(event){
+      $('#team').removeClass('hide');
+      event.stopPropagation();
+  })
+});
 
+$(document).ready(function() {
+  $('body').on('click', function(event){
+      $('#team').addClass('hide');
+      event.stopPropagation();
+  })
+});
 
 
 })();

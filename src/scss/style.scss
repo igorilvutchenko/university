@@ -246,7 +246,7 @@ a:hover{
 }
 
 .sandvich{
-    z-index: 20;
+    z-index: 200;
     // position: relative;
     // top: 42px;
     // right: 100px;
@@ -437,85 +437,6 @@ a:hover{
    }
 }
 
-// @media (max-width: 767px) and (min-width: 320px) {
-  // .sub-menu{
-            // position: absolute;
-            // opacity: 1;
-            // height: 300px;
-            // width: 200px;
-            // top:-160px;
-            // left: 0;
-            // padding: 20px;
-        // }
-// .sandvich{
-//   position: fixed;
-//   top:30px;
-//   right:40px;
-// }
-// .sandvich{
-  // height: 250px;
-  // width: 300px;
-  // top:-30px;
-  // display: block;
-  // margin:0 auto;
-  // span{
-    // background-color: transparent;
-  // }
-// }
-// .sub-menu{
-          // font-size: 8px;
-            // position: fixed;
-            // opacity: 1;
-            // height: 430px;
-            // width: 320px;
-            // left: 30px;
-            // padding: 20px;
-            // li{
-              // &:first-child{
-                // margin-top: 220px;
-              // }
-            // }
-        // }
-// .cls {
-  // height: 0;
-// }
-// }
-
-// @media (max-width: 1140px) and (min-width: 768px) {
-// .sandvich{
-  // height: 310px;
-  // width: 708px;
-  // display: block;
-  // margin:0 auto;
-  // text-align: center;
-  // span{
-    // background-color: transparent;
-  // }
-// }
-// .sub-menu{
-  // margin-left: 0;
-  // font-size: 12px;
-    // opacity: 1;
-    // height: 310px;
-    // width: 708px;
-    // padding: 20px;
-    // li{
-      // &:first-child{
-        // margin-top: 0;
-      // }
-    // }
-  // }
-// .cls {
-  // height: 0;
-// }
-// }
-// .copyright{
-	// margin: 20px 0;
-	// text-align: center;
-	// span{
-		// display: block;
-	// }	
-// }
 .phone,
 .mail,
 .addr{
@@ -925,6 +846,7 @@ text-align: center;
 }
 .event{
 	width: 360px;
+  font-size: 0;
 	&-content{
 		height: 225px;
 		font-size: 0;		
@@ -932,62 +854,79 @@ text-align: center;
 	&-info,
 	&-photo{
 		font-size: 0;
-		height: 100%;
-		overflow: hidden;
+		height: 225px;
+		// overflow: hidden;
 		display: inline-block;
-		background-color:$green;		
-	}
-	&-info{
-		width: 100px;
-		color:#fff;
-	}
-	&-date,
-	&-time,
-	&-persons{
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items:center;		
-	}
-	&-date{
-		height:50%;
-		border-bottom: 2px solid rgba(255, 255, 255, 0.34);
-		&__day{
-			display: block;
-			font-size:32px;
-		}
-		&__month{
-			font-size: 16px;
-		}		
-	}
-	&-time{
-		height:30%;
-		font-size: 12px;
-		text-align: right;
-		span{
-			width: 70px;
-			&:before{
-				content: url(../img/clock.png);
-				width: 26px;
-				margin: 3px;
-			}
-		}		
-	}
-	&-persons{
-		height:20%;
-		background-color: $dark-gray;
-		font-size: 12px;
-		text-align: center;		
-	}
-	&-photo{
-		width: calc(100% - 100px);
-		height: 100%;
-		overflow: hidden;
+		background-color:$green;
+  }
+  &-info{
+    vertical-align: top;
+    width: 100px;
+    color:#fff;
+  }
+  &-date,
+  &-time,
+  &-persons{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;   
+  }
+  &-date{
+    height:98px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.34);
+    position: relative;
+    &__day{
+      display: block;
+      font-size:32px;
+    }
+    &__month{
+      font-size: 16px;
+    }   
+  }
+  &-time{
+    height:77px;
+    font-size: 12px;
+    text-align: right;
+    span{
+      width: 70px;
+      &:before{
+        content: url(../img/clock.png);
+        width: 26px;
+        margin: 3px;
+      }
+    }   
+  }
+  &-persons{
+    height:50px;
+    background-color: $dark-gray;
+    font-size: 12px;
+    text-align: center;   
+  }
+  &-photo{
+    width: 260px;
+    height: 225px;
+    overflow: hidden;
+    position:relative;		
 		img{
-			width: 100%;
-			height: 100%;
+      height: 100%;
+			width: auto;
 		}		
 	}
+  &-type{
+    position: absolute;
+    top:3px;
+    right: 3px;
+    &__lection{
+      content:url(../img/type-lection.png);
+    }
+    &__kouching{
+      content:url(../img/type-kouching.png);
+    }
+    &__event{
+      content:url(../img/type-event.png);
+    }
+  }
 	&-description{
 		font-size: 16px;
 		font-weight: 700;
@@ -1000,7 +939,9 @@ text-align: center;
 		text-align: center;		
 	}
 }
-
+.event-photo:hover .overlay{
+  opacity: 1;
+}
 
 @media (max-width: 1140px) and (min-width: 768px) {
 .events{
@@ -1025,11 +966,34 @@ text-align: center;
 }
 .event{
   width: 270px;
+  display: block;
   &-content{
-
   height: 169px;
   }
-  margin: 10px 0;
+  &-info{
+    height: 169px;
+    width: 70px;
+  }
+  &-photo{
+    width: 200px;
+    height: 169px;
+  }
+  &-date{
+    height: 80px;
+  }
+  &-time{
+    width: 50px;
+    height: 50px;
+    span{
+      &:before{
+        display: none;
+      }
+    }
+  }
+  &-persons{
+    height: 39px;
+  }
+  margin: 20px 0;
 }
 }
 
@@ -1683,6 +1647,199 @@ text-align: center;
 	}
 }
 
+.eventslist{
+  .dropdown{
+    width: 300px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .dropdown-tag{
+    color:#000;
+    text-transform: uppercase;
+  }
+}
+
+.datepicker-here{
+  width: 100px;
+  height: 97px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.button-team{
+  padding: 15px 30px;
+  background-color:#fff;
+  border:1px solid $dark-gray;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.team{
+
+  position: absolute;
+  top:340px;
+  left: 430px;
+  width: 615px;
+  height: 700px;
+  z-index: 100;
+  // padding: 0 30px;
+  background-color: #fff;
+  &-container {
+    width: 615px;
+    height: 625px;
+    padding: 70px 0;
+    overflow-x: hidden;
+  }
+  &-list{
+  overflow: hidden;
+  width: 100%;
+  }
+  &-title{
+    font-size: 22px;
+    line-height: 75px;
+    background-color: $gray;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+    ::-webkit-scrollbar {
+    background: transparent;
+    width: 18px;
+    position: absolute;
+  }
+  ::-webkit-scrollbar-track {
+    background: $gray;
+    position: absolute;
+    z-index: -2;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: url(../img/list-scroll__gray.png) no-repeat;  
+  }
+  .gradient{
+    position: absolute;
+    top:72px;
+    left:275px;
+
+  }
+}
+.player{
+  text-align: center;
+  width: 165px;
+  height: 230px;
+  margin:50px 0 0 30px;
+  // padding: 30px;
+  display: inline-block;
+    &-name{
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  &__bold {
+    font-weight: 700;
+    margin-top: 20px
+   } 
+  }
+}
+
+.typeslist{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  &-type{
+  font-size: 14px;
+    font-weight: 300;
+    margin-left: 30px;
+    &__dates,
+    &__lections,
+    &__events,
+    &__kouch{
+      &:before{
+      content:' ';
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      }
+    }
+    &__dates{
+      &:before{
+      background-color: #00b034;
+      }
+    }
+    &__lections{
+      &:before{
+      background-color: #b3cd08;
+      }
+
+    }
+    &__events{
+      &:before{
+      background-color: #e54f1d;
+      }
+    }
+    &__kouch{
+      &:before{
+      background-color: #f09d01;
+    }
+    }
+  }
+}
 
 
+@media (max-width: 1140px) and (min-width: 768px) {
+.eventslist{
+  .container{
+    text-align: center;
 
+  }
+}
+
+}
+.events-list{
+  .event{
+    display: inline-block;
+    margin:60px 0 0 20px;
+  }
+  padding-bottom: 75px;
+}
+
+.typeevent{
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
+  &__selected{
+    color:#00b034;
+    &:before{
+      content:url(../img/logo-selecteddate.png);
+      height: 12px;
+      margin-right:5px;
+    }
+  }
+  &__lection{
+    color:$green;
+    &:before{
+      content:url(../img/logo-lection.png);
+      height: 12px;
+      margin-right:5px;
+    }
+  }
+  &__event{
+    color:#e54f1d;
+    &:before{
+      content:url(../img/logo-event.png);
+      height: 12px;
+      margin-right:5px;
+    }
+  }
+  &__kouching{
+    color:#f2a312;
+    &:before{
+      content:url(../img/logo-kouch.png);
+      height: 12px;
+      margin-right:5px;
+    }
+  }
+}
