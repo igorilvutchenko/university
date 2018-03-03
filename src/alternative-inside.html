@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--для адаптивной верстки-->
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
-<body>
+<body data-spy="scroll">
 //= html/header.html
 
 
@@ -134,7 +134,8 @@
 </section>
 
 	<button class="enroll-button" id="enrollbutton">Записаться</button>
-		<section class="form hide" id="enrollform">
+		<section class="sectionform hide" id="enrollform">
+			<div class="container">
 		<h2 class="form-title">Записаться</h2>
 		<div class="gradient"></div>
 		<form action="" class="form" id="enroll">
@@ -146,7 +147,8 @@
 			</label>
 			<button class="form-button" id="enrollsendbutton">Отправить данные</button>
 		</form>
-	</section>
+		</div>
+	<!-- </section> -->
 	</section>
 
 

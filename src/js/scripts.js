@@ -4,14 +4,11 @@
 /*Sandvich*/
 
 $(document).ready(function() {
-        $('.sandvich').on('click', function(event){
+        $('body').on('click', '.sandvich', function(event){
             $(this).addClass('oppenned');
             event.stopPropagation();
         })
-        // $(document).delegate('.sandvich', 'click', function(event){
-      // $(this).addClass('oppenned');
-      // event.stopPropagation();
-    // })
+
         $('body').on('click', function(event) {
             $('.sandvich').removeClass('oppenned');
         })
@@ -20,8 +17,6 @@ $(document).ready(function() {
             event.stopPropagation();
         });
     });
-
-
 
 /*Izotope sorting*/
 
@@ -32,8 +27,6 @@ $('.newslist').isotope({
     gutter: 25
   }
 })
-
-
 
 /*Izotope filter*/
 
@@ -51,7 +44,6 @@ $('#filters a').click(function(){
   return false;
 });
 
-
 /*Dropdown selector*/
 
 $(document).ready(function() {
@@ -60,9 +52,6 @@ $(document).ready(function() {
       event.stopPropagation();
   })
 });
-
-
-
 
 
 /*Call/hide form*/
@@ -96,6 +85,24 @@ $(document).ready(function() {
       event.stopPropagation();
   })
 });
+
+$(document).ready(function() {
+ 
+ 
+   $(".anchor").click(function(e) {
+    e.preventDefault();
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top + "px"
+      }, 700, "swing");
+   });
+ 
+ 
+});
+
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+
 
 
 })();

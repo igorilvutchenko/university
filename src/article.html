@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--для адаптивной верстки-->
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
-<body>
+<body data-spy="scroll">
 	//= html/header.html
 
 	<section class="article">
@@ -121,16 +121,16 @@
         </div>
     </section>
         
-    <section class="form">
+    <section class="sectionform">
         <div class="container">
         <form action="" class="form" id="subcribeform">
-        <h2 class="form-title form-title__wide">Подишитесь на наш блог и всегда будьте в курсе всех самых сежих и интересных событий</h2>
-            <label for="emailaddres" class="form-label">
+        <h2 class="form-title form-title__thin">Подишитесь на наш блог и всегда будьте в курсе всех самых сежих и интересных событий</h2>
+            <label for="emailaddres" class="form-label ">
                 <input type="email" placeholder="Введите Ваш email" class="form-input" id="emailaddres" data-error="Пожалуйста, укажите Ваш email">
             </label>
             <button class="form-button form-button__right">Подписаться</button>
-        <div class="gradient gradient__left"></div>
         </form>    
+        <div class="gradient gradient__left"></div>
         </div> 
 </section>
 

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--для адаптивной верстки-->
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
-<body>
+<body data-spy="scroll">
 
 <div class="sandvich" id="sandvich">
 	<span class="cls"></span>
@@ -277,7 +277,8 @@
 </section>
 
 	<button class="enroll-button" id="enrollbutton">Записаться</button>
-		<section class="form hide" id="enrollform">
+		<section class="sectionform hide" id="enrollform">
+			<div class="container">
 		<h2 class="form-title">Записаться</h2>
 		<div class="gradient"></div>
 		<form action="" class="form" id="enroll">
@@ -289,7 +290,8 @@
 			</label>
 			<button class="form-button" id="enrollsendbutton">Отправить данные</button>
 		</form>
-	</section>
+		</div>
+	<!-- </section> -->
 	</section>
 
 
@@ -329,7 +331,7 @@
 		<img src="img/webstudio-logo.png" alt="" class="studiologo">
 	</div>
 
-<div class="arrow-up"><a href="#header"><img src="img/arrow-up.png" alt=""></a></div>
+<div class="arrow-up"><a href="#header" class="anchor"><img src="img/arrow-up.png" alt=""></a></div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
