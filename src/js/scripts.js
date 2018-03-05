@@ -4,13 +4,15 @@
 /*Sandvich*/
 
 $(document).ready(function() {
-        $('body').on('click', '.sandvich', function(event){
+        $('body').on('click touchstart', '#sandvich', function(event){
             $(this).addClass('oppenned');
             event.stopPropagation();
+            event.preventDefault();
         })
 
         $('body').on('click', function(event) {
             $('.sandvich').removeClass('oppenned');
+            event.stopPropagation();
         })
         $('.cls').on('click', function(event){
             $('.sandvich').removeClass('oppenned');
@@ -86,22 +88,17 @@ $(document).ready(function() {
   })
 });
 
-$(document).ready(function() {
- 
- 
+$(document).ready(function() { 
    $(".anchor").click(function(e) {
     e.preventDefault();
       $("html, body").animate({
          scrollTop: $($(this).attr("href")).offset().top + "px"
       }, 700, "swing");
-   });
- 
- 
+   }); 
 });
-
-$('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh')
-})
+// $('[data-spy="scroll"]').each(function () {
+//   var $spy = $(this).scrollspy('refresh')
+// })
 
 
 

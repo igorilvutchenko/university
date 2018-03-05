@@ -1641,6 +1641,7 @@ a:hover {
     position: absolute;
     right: 3px;
     top: 3px;
+    overflow: hidden;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease; }
     .sandvich span:nth-child(1) {
@@ -1658,6 +1659,7 @@ a:hover {
   right: 0;
   top: 0;
   position: absolute;
+  z-index: 50;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
