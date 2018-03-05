@@ -96,9 +96,6 @@ $(document).ready(function() {
       }, 700, "swing");
    }); 
 });
-// $('[data-spy="scroll"]').each(function () {
-//   var $spy = $(this).scrollspy('refresh')
-// })
 
 
 
