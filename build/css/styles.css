@@ -1446,6 +1446,7 @@ a:hover {
 
 .header,
 .footer {
+  width: 100%;
   position: relative;
   padding: 25px 80px;
   display: -webkit-box;
@@ -2802,6 +2803,9 @@ a:hover {
   border: 1px solid #253238;
   font-size: 14px;
   margin-top: 30px; }
+  .button-team:hover {
+    background-color: #253238;
+    color: #fff; }
 
 .team {
   position: absolute;

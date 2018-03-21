@@ -51,6 +51,7 @@ a:hover{
 
 .header,
 .footer{
+  width:100%;
 	position: relative;
 	padding: 25px 80px;	
 	display: flex;
@@ -476,7 +477,7 @@ text-align: center;
 
 .studiotext,
 .studiologo{
-	display: inline-block;
+	display: inline-block;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 }
 
 .studiotext{
@@ -1720,6 +1721,10 @@ text-align: center;
   border:1px solid $dark-gray;
   font-size: 14px;
   margin-top: 30px;
+  &:hover{
+  background-color: $dark-gray;
+  color:#fff;
+  }
 }
 
 .team{

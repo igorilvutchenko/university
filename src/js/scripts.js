@@ -4,11 +4,16 @@
 /*Sandvich*/
 
 $(document).ready(function() {
-        $('body').on('click touchstart', '#sandvich', function(event){
+        $('body').on('click', '#sandvich', function(event){
+            $(this).addClass('oppenned');
+            event.stopPropagation();
+            // event.preventDefault();
+        })
+        /*$('body').on('touchstart', '#sandvich', function(event){
             $(this).addClass('oppenned');
             event.stopPropagation();
             event.preventDefault();
-        })
+        })*/
 
         $('body').on('click', function(event) {
             $('.sandvich').removeClass('oppenned');
